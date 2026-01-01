@@ -77,9 +77,7 @@ export function Benefits() {
                                 className="flex flex-col items-center text-center p-8 glass rounded-[2rem] hover:bg-white/[0.02] transition-all duration-300 border border-white/10 shadow-xl group"
                             >
                                 <div className="text-4xl md:text-5xl font-bold text-white mb-3 tracking-tighter group-hover:scale-110 transition-transform duration-500">
-                                    {stat.value.split(' ').map((word, i) => (
-                                        <span key={i} className="block">{word}</span>
-                                    ))}
+                                    {stat.value}
                                 </div>
                                 <div className="text-[10px] md:text-xs text-text-secondary uppercase tracking-[0.3em] font-bold leading-relaxed max-w-[120px]">
                                     {stat.label}
