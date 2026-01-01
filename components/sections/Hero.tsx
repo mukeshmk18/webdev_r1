@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/Button";
 import { ArrowRight, Play } from "lucide-react";
 import { useBooking } from "@/context/BookingContext";
-import { Spotlight } from "@/components/ui/Spotlight";
 
 export function Hero() {
     const { openBooking } = useBooking();
@@ -14,19 +13,18 @@ export function Hero() {
             id="home"
             className="relative min-h-[100vh] flex items-center justify-center overflow-hidden pt-20 bg-background antialiased bg-grid-white/[0.02]"
         >
-            <Spotlight
-                className="-top-40 left-0 md:left-60 md:-top-20"
-                fill="#E0F2FE"
-            />
-
             {/* Background Effects */}
-            <div className="absolute inset-0 z-0">
-                {/* Enhanced Ambient Glow */}
-                <div className="absolute top-[20%] left-[20%] w-[400px] h-[400px] bg-primary/30 rounded-full blur-[100px] animate-float opacity-50" />
-                <div className="absolute top-[40%] right-[20%] w-[300px] h-[300px] bg-secondary/30 rounded-full blur-[100px] animate-float opacity-50" style={{ animationDelay: "2s" }} />
+            <div className="absolute inset-0 z-0 bg-background">
+                {/* Glowing Orbs - More sophisticated colors */}
+                <div className="absolute top-[-10%] left-[10%] w-[500px] h-[500px] bg-primary/20 rounded-full blur-[120px] animate-pulse-glow" />
+                <div className="absolute bottom-[10%] right-[10%] w-[600px] h-[600px] bg-secondary/10 rounded-full blur-[140px] animate-pulse-glow" style={{ animationDelay: "3s" }} />
+                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-accent/5 rounded-full blur-[160px] animate-pulse-glow" style={{ animationDelay: "1.5s" }} />
 
-                {/* Moving Grid Background */}
-                <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]" />
+                {/* Refined Grid Overlay */}
+                <div className="absolute inset-0 bg-[url('/grid.svg')] bg-center [mask-image:radial-gradient(ellipse_at_center,transparent_10%,black)] opacity-[0.15]" />
+
+                {/* Subtle Vignette */}
+                <div className="absolute inset-0 bg-gradient-to-b from-transparent via-background/20 to-background pointer-events-none" />
             </div>
 
             <div className="container relative z-10 px-4 md:px-6 text-center">
