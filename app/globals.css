@@ -6,11 +6,11 @@
   --foreground: #E0F2FE;
   /* Light Pale Blue instead of White */
 
-  --primary: #818cf8;
-  /* Soft Indigo */
-  --secondary: #22d3ee;
+  --primary: #7c3aed;
+  /* Reverting to Purple for buttons */
+  --secondary: #06b6d4;
   /* Cyan */
-  --accent: #38bdf8;
+  --accent: #3b82f6;
   /* Sky Blue */
 
   --text-secondary: #94a3b8;
