@@ -45,7 +45,7 @@ const faqs = [
 
 export function SocialProof() {
     return (
-        <section className="py-24 bg-black relative">
+        <section className="py-24 bg-background relative">
             <div className="container px-4 md:px-6">
 
                 {/* FAQ Section */}

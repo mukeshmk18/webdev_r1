@@ -12,11 +12,11 @@ export function Hero() {
     return (
         <section
             id="home"
-            className="relative min-h-[100vh] flex items-center justify-center overflow-hidden pt-20 bg-black/[0.96] antialiased bg-grid-white/[0.02]"
+            className="relative min-h-[100vh] flex items-center justify-center overflow-hidden pt-20 bg-background antialiased bg-grid-white/[0.02]"
         >
             <Spotlight
                 className="-top-40 left-0 md:left-60 md:-top-20"
-                fill="white"
+                fill="#E0F2FE"
             />
 
             {/* Background Effects */}

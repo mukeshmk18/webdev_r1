@@ -32,7 +32,7 @@ const steps = [
 
 export function HowItWorks() {
     return (
-        <section id="how-it-works" className="py-24 bg-black/50 relative">
+        <section id="how-it-works" className="py-24 bg-background/50 relative">
             <div className="container px-4 md:px-6">
                 <div className="text-center mb-16">
                     <h2 className="text-3xl md:text-5xl font-bold mb-4">How It Works</h2>
