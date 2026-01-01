@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export function Marquee() {
     return (
-        <div className="bg-primary text-white py-1 overflow-hidden relative z-50">
+        <div className="bg-[#7c3aed] text-white py-1 overflow-hidden relative z-50">
             <div className="flex whitespace-nowrap">
                 <motion.div
                     animate={{ x: [0, -1000] }}
