@@ -20,8 +20,8 @@ export function Hero() {
                 <div className="absolute bottom-[10%] right-[10%] w-[600px] h-[600px] bg-secondary/10 rounded-full blur-[140px] animate-pulse-glow" style={{ animationDelay: "3s" }} />
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-accent/5 rounded-full blur-[160px] animate-pulse-glow" style={{ animationDelay: "1.5s" }} />
 
-                {/* Refined Grid Overlay */}
-                <div className="absolute inset-0 bg-[url('/grid.svg')] bg-center [mask-image:radial-gradient(ellipse_at_center,transparent_10%,black)] opacity-[0.15]" />
+                {/* Dynamic Square Grid Overlay */}
+                <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff0a_1px,transparent_1px),linear-gradient(to_bottom,#ffffff0a_1px,transparent_1px)] bg-[size:40px_40px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]" />
 
                 {/* Subtle Vignette */}
                 <div className="absolute inset-0 bg-gradient-to-b from-transparent via-background/20 to-background pointer-events-none" />
